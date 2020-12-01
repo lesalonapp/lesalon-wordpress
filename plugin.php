@@ -40,4 +40,18 @@ function lesalon_noindex_tag() {
   echo '<meta name="robots" content="noindex">';
 }
 
+add_action('wp_head', 'lesalon_no_font_family');
+
+function lesalon_no_font_family() {
+  echo '<style>
+    .mce-widget[aria-label="Font Family"] {
+      display:none;
+    }
+    
+    #adminmenu #toplevel_page_fonts-plugin {
+      display:none;
+    }
+  </style>';
+}
+
 ?>
