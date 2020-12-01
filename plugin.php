@@ -34,4 +34,10 @@ function lesalon_admin_logo() {
   </style>';
 }
 
+add_action('wp_head', 'lesalon_noindex_tag');
+
+function lesalon_noindex_tag() {
+  echo '<meta name="robots" content="noindex">';
+}
+
 ?>
