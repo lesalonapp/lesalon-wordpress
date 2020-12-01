@@ -40,7 +40,7 @@ function lesalon_noindex_tag() {
   echo '<meta name="robots" content="noindex">';
 }
 
-add_action('wp_head', 'lesalon_no_font_family');
+add_action('admin_head', 'lesalon_no_font_family');
 
 function lesalon_no_font_family() {
   echo '<style>
